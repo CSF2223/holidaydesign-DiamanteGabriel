@@ -19,13 +19,13 @@ body {
 
 header {
     margin: 0 4rem;
-    letter-spacing: 0.8rem;
+    letter-spacing: 0.2rem;
     text-align: center;
     border-bottom: 1px solid #4B56D2;
     border-right: 1px solid #4B56D2;
     border-left: 1px solid #4B56D2;
     padding: 0.5rem;
-    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 5px #4B56D2;
     text-transform: uppercase;
     font-size: 1.1rem;
     border-radius: 1rem;
@@ -46,6 +46,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
 }
 
 .HolidayCard img {
@@ -76,16 +77,11 @@ header {
     color: #472183;
 }
 
-.fa-tree-christmas {
-    font-size: 2.2rem;
-    padding: 1.5rem;
-    color: #472183;
-}
-
-.fa-hat-santa {
-    font-size: 2.2rem;
-    padding: 1.5rem;
-    color: #472183;
+footer {
+    text-align: center;
+    color: #fff;
+    margin: 10rem 0;
+    border-top: 1px solid #BBE1FA;
 }
 
 .copyright {
@@ -95,6 +91,65 @@ header {
     color: #fff;
     display: block;
     align-items: center;
+}
+
+.treebox {
+    border-bottom: 1px solid #4B56D2;
+    border-right: 1px solid #4B56D2;
+    border-left: 1px solid #4B56D2;
+    padding: 0.5rem;
+    box-shadow: 10px 10px 5px #4B56D2;
+    border-radius: 1rem;
+    background-color: #F1F6F5;
+}
+
+.tree {
+width: 75px;
+height: 100px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+animation: mymove 5s infinite;
+animation-delay: 2s;
+animation-direction: alternate;
+}
+
+@keyframes mymove {
+0% {left:0px;}
+25% {left:150px;}
+50% {left:-150px;}
+100% {left:0px;}
+}
+
+.treebox2 {
+    border-bottom: 1px solid #4B56D2;
+    border-right: 1px solid #4B56D2;
+    border-left: 1px solid #4B56D2;
+    padding: 0.5rem;
+    box-shadow: 10px 10px 5px #4B56D2;
+    border-radius: 1rem;
+    background-color: #F1F6F5;
+}
+
+.tree2 {
+width: 75px;
+height: 100px;
+transform: rotate(180deg);
+display: block;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+animation: mymove2 5s infinite;
+animation-delay: 2s;
+animation-direction: alternate;
+}
+
+@keyframes mymove2 {
+0% {right:0px;}
+25% {right:150px;}
+50% {right:-150px;}
+100% {right:0px;}
 }
 
 @media (min-width: 768px) {
@@ -109,7 +164,29 @@ header {
         flex-wrap: wrap;
     }
     
- .HolidayCard {
+    .HolidayCard {
         max-width: 28%; 
     }   
+    
+    .tree {
+        width: 60%;
+    }
+    
+    .tree2 {
+        width: 60%;
+    }
+    
+    .treebox {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    
+    .treebox2 {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    
+    .HolidayCard {
+        font-size: 1.2rem;
+    }
 }
