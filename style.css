@@ -54,7 +54,7 @@ h4 {
     text-decoration-color: #4B56D2
 }
 
-.smol {
+.subTitle {
     color: #472183;
     text-decoration: underline;
     text-decoration-style: solid;
@@ -176,6 +176,11 @@ animation-delay: 2s;
 animation-direction: alternate;
 }
 
+.tree:hover {
+    transform: scale(1.1);
+}
+
+
 @keyframes mymove {
 0% {left:0px;}
 25% {left:150px;}
@@ -205,6 +210,10 @@ position: relative;
 animation: mymove2 5s infinite;
 animation-delay: 2s;
 animation-direction: alternate;
+}
+
+.tree2:hover {
+    transform: scale(-1.1);
 }
 
 @keyframes mymove2 {
