@@ -1,0 +1,256 @@
+/*
+Color Palette:
+background color: #472183
+font color: #4B56D2       
+secondary color: #82C3EC
+tertiary color: #F1F6F5
+*/
+
+/* CSS syntax notes:
+     selector {property: value;}
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+body {
+    background-image: radial-gradient(#4B56D2 25%, #472183 75%);
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    margin: 0 4rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    border-bottom: 1px solid #4B56D2;
+    border-right: 1px solid #4B56D2;
+    border-left: 1px solid #4B56D2;
+    padding: 0.5rem;
+    box-shadow: 10px 10px 5px #4B56D2;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    background-color: #82C3EC;
+    color: #F1F6F5;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: #4B56D2;
+}
+
+header:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    color: #472183;
+    text-decoration: underline;
+    text-decoration-style: double;
+    text-decoration-color: #4B56D2;
+}
+
+h4 {
+    color: #472183;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #4B56D2
+}
+
+.subTitle {
+    color: #472183;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+.HolidayCard {
+    background-color: #82C3EC;
+    color: #200439;
+    margin: 4rem 3rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    border: 1px solid #9277AC;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 5px #4B56D2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.HolidayCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 5px 5px 2.5px #472183;
+}
+
+.HolidayCard img:hover {
+  transform: scale(1.1);  
+}
+
+.HolidayCard a {
+    text-decoration: none;
+    color: #472183;
+}
+
+.citationText {
+    color: #4B56D2;
+    background-color: #F1F6F5;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    box-shadow: 5px 5px 2.5px #472183;
+}
+
+.citationText:hover {
+  transform: scale(1.1);  
+}
+
+.fa-snowman {
+    font-size: 2.8rem;
+    padding-top: 1rem;
+    color: #472183;
+}
+
+.fa-snowman:hover {
+  transform: scale(1.1);  
+}
+
+.fa-gift {
+    font-size: 2.8rem;
+    padding-top: 1rem;
+    color: #472183;
+}
+
+.fa-gift:hover {
+  transform: scale(1.1);  
+}
+
+.fa-sleigh {
+    font-size: 2.8rem;
+    padding-top: 1rem;
+    color: #472183;
+}
+
+.fa-sleigh:hover {
+  transform: scale(1.1);  
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    margin: 1rem 0;
+    border-top: 1px solid #BBE1FA;
+}
+
+.copyright {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    display: block;
+    align-items: center;
+}
+
+.treebox {
+    border-bottom: 1px solid #4B56D2;
+    border-right: 1px solid #4B56D2;
+    border-left: 1px solid #4B56D2;
+    padding: 0.5rem;
+    box-shadow: 10px 10px 5px #4B56D2;
+    border-radius: 1rem;
+    background-color: #F1F6F5;
+    margin-bottom: 0rem;
+}
+
+.tree {
+width: 75px;
+height: 100px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+animation: mymove 5s infinite;
+animation-delay: 2s;
+animation-direction: alternate;
+}
+
+.tree:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes mymove {
+0% {left:0px;}
+25% {left:150px;}
+50% {left:-150px;}
+100% {left:0px;}
+}
+
+.treebox2 {
+    border-bottom: 1px solid #4B56D2;
+    border-right: 1px solid #4B56D2;
+    border-left: 1px solid #4B56D2;
+    padding: 0.5rem;
+    box-shadow: 10px 10px 5px #4B56D2;
+    border-radius: 1rem;
+    background-color: #F1F6F5;
+    margin-top: 0rem;
+}
+
+.tree2 {
+width: 75px;
+height: 100px;
+transform: rotate(180deg);
+display: block;
+margin-left: auto;
+margin-right: auto;
+position: relative;
+animation: mymove2 5s infinite;
+animation-delay: 2s;
+animation-direction: alternate;
+}
+
+.tree2:hover {
+    transform: scale(-1.1);
+}
+
+@keyframes mymove2 {
+0% {right:0px;}
+25% {right:150px;}
+50% {right:-150px;}
+100% {right:0px;}
+}
+
+@media (min-width: 768px) {
+    header {
+        font-size: 1.6rem;
+    }
+
+    .HolidayCelebrations {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .HolidayCard {
+        max-width: 28%; 
+    }   
+    
+    
+    .treebox {
+        margin-left: 16rem;
+        margin-right: 16rem;
+    }
+    
+    .treebox2 {
+        margin-left: 16rem;
+        margin-right: 16rem;
+    }
+    
+    .HolidayCard {
+        font-size: 1.2rem;
+    }
+}
